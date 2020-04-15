@@ -1,0 +1,79 @@
+<div class="jumbotron" style="background-color: #fff; height: calc(95vh);">
+    <h1 style="text-align: center">COVID 19 WORLD X</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <td class="col-md-3">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title style="color: darkcyan">CONFIRMED</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                {{confirmed}}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </td>
+                <td class="col-md-3">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title style="color: green">RECOVERED</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                {{recovered}}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </td>
+                <td class="col-md-3">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title style="color: red">CRITICAL</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                {{critical}}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </td>
+                <td class="col-md-3">
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title style="color: black">DEATHS</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                {{deaths}}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <mat-table [dataSource]="dataSource" class="mat-elevation-z8 stats">
+        <ng-container matColumnDef="Confirmed">
+            <mat-header-cell *matHeaderCellDef> CONFIRMED </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.confirmed }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Recovered">
+            <mat-header-cell *matHeaderCellDef> RECOVERED </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.recovered }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Critical">
+            <mat-header-cell *matHeaderCellDef> CRITICAL </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.critical }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Deaths">
+            <mat-header-cell *matHeaderCellDef> CONFIRMED </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.deaths }} </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table> -->
+</div>
